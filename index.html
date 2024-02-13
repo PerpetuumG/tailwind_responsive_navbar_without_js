@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans min-h-svh max-w-screen-xl mx-auto box-border bg-[#f5f5f5]">
+    <header class="flex justify-between items-center w-full p-5 bg-[#000000]/5 backdrop-blur-2xl">
+      <h1 class="text-3xl font-bold">Logo</h1>
+
+      <input type="checkbox" id="check" class="hidden" />
+      <label for="check" class="icons md:hidden">
+        <img class="w-8 h-8 cursor-pointer" src="img/menu.png" alt="menuButton" id="menuButton" />
+        <img
+          class="w-7 h-7 cursor-pointer"
+          src="img/close.png"
+          alt="closeButton"
+          id="closeButton"
+        />
+      </label>
+
+      <nav
+        class="navbar h-0 absolute top-16 right-0 left-0 shadow-lg transition-all duration-300 overflow-hidden md:static md:flex md:bg-transparent md:shadow-none gap-8 md:translate-y-0 md:transition-none md:h-auto md:max-h-6"
+      >
+        <a
+          class="block my-4 text-center text-xl cursor-pointer font-medium -translate-y-10 transition-all opacity-0 delay-0 md:my-0 md:transition-none"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="block my-4 text-center text-xl cursor-pointer font-medium -translate-y-10 transition-all opacity-0 delay-[50ms] md:my-0 md:transition-none"
+          href="#"
+          >Products</a
+        >
+        <a
+          class="block my-4 text-center text-xl cursor-pointer font-medium -translate-y-10 transition-all opacity-0 delay-[100ms] md:my-0 md:transition-none"
+          href="#"
+          >About</a
+        >
+        <a
+          class="block my-4 text-center text-xl cursor-pointer font-medium -translate-y-10 transition-all opacity-0 delay-[150ms] md:my-0 md:transition-none"
+          href="#"
+          >Contacts</a
+        >
+        <a
+          class="block my-4 text-center text-xl cursor-pointer font-medium -translate-y-10 transition-all opacity-0 delay-[200ms] md:my-0 md:transition-none"
+          href="#"
+          >Sign In</a
+        >
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .icons #closeButton {
+    display: none;
+  }
+
+  #check:checked ~ .icons #closeButton {
+    display: block;
+  }
+  #check:checked ~ .icons #menuButton {
+    display: none;
+  }
+
+  #check:checked ~ .navbar {
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(40px);
+    height: 15rem;
+  }
+
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #check:checked ~ .navbar a,
+  #check:not(:checked) ~ .navbar a {
+    opacity: 1;
+    transform: none;
+  }
+}
